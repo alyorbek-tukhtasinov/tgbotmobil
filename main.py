@@ -36,5 +36,7 @@ from handlers.start import start_handler
 app.add_handler(start_handler)
 
 if __name__ == "__main__":
+    import asyncio
     print("🤖 Bot ishga tushdi...")
-    app.run_polling()
+    asyncio.run(app.run_polling())
+
